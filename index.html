@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Integration with Redirect</title>
+    <script>
+        function redirectWithAd() {
+            // Ad Link
+            const adLink = "https://www.profitablecpmrate.com/khsmku6nq?key=d83c7fac9cd6350e6e74522ed87e385d";
+            // Original Page Link
+            const originalLink = "https://hubcdn.vip/dl/?link=https://video-downloads.googleusercontent.com/ADGPM2nGOzW-pBP_b3kS6OmjgH_WB_Fg0Xpk31e6tpmS0bPGFlmL1TrDg5384nn84AX4YmINqyXvCVa-hviIFNlmiVXCWkl7VQ7XOjyws930S-H6MChJWOcIzRTJh_v6o8HW8UkpDxEp4j83wzhC-3zATFkAL5mKv2QbDrG1hY6Tau2VJgJVFusFC2vmVIaV_WiYtmZHRKBw2rOeHb9YI-y_sv5df1eFR1j8ZzTSbnSu7MTnLYaoqEY";
+
+            // Open Ad Link
+            window.open(adLink, "_blank");
+
+            // Redirect to Original Link after 2 seconds
+            setTimeout(() => {
+                window.location.href = originalLink;
+            }, 2000); // 2000 milliseconds = 2 seconds
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Page</h1>
+    <p>Click the button below to continue:</p>
+    <button onclick="redirectWithAd()">Continue</button>
+</body>
+</html>
